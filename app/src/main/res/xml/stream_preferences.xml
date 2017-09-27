@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.v7.preference.ListPreference
+        android:key="prefs-preferred-quality"
+        android:icon="@drawable/ic_soccer"
+        android:summary="Bitrate determines the quality of the stream. Auto is recommended."
+        android:title="Streaming bitrate"/>
+
+
+    <android.support.v7.preference.ListPreference
+        android:key="prefs-preferred-server"
+        android:icon="@drawable/ic_record_dark"
+        android:summary="Streaming region to stream to"
+        android:title="Server"/>
+
+    <android.support.v7.preference.SwitchPreferenceCompat
+        android:defaultValue="false"
+        android:key="prefs-record-locally"
+        android:summary="Should matches also be saved to the device?"
+        android:title="Record Locally"/>
+
+
+    <com.test.settingsapplication.SpinnerPreference
+        android:key="bitrate-spinner"
+        android:title="Bitrate (spinner)"
+        android:defaultValue=""
+        app:entries="@array/bitrate_opts"
+        app:entryValues="@array/bitrate_vals" />
+
+
+</android.support.v7.preference.PreferenceScreen>

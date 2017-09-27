@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="bitrate_opts">
+        <item>Auto quality</item>
+        <item>Lowest (500Kbps)</item>
+        <item>Low (1000Kbps)</item>
+        <item>Medium (1500Kbps)</item>
+        <item>Good (2000Kbps)</item>
+    </string-array>
+    <string-array name="bitrate_vals">
+        <item>-1</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>2000</item>
+    </string-array>
+
+
+
+</resources>
